@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Three.JS App</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<!-- Three.js library -->
+	<script src="https://threejs.org/build/three.min.js">
+
+	</script>
+	<!-- GLTFLoader.js source -->
+	<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js">
+
+	</script>
+	<script>
+		const renderer = new THREE.WebGLRenderer();
+		const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000);
+		const scene = new THREE.Scene();
+		let Mesh;
+		let light;
+
+		function init() {
+			scene.background = new THREE.Color('#FFE5B4');
+			camera.position.set(0, 10, 20);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+		}
+
+		function setLight() {
+			light = new THREE.AmbientLight(0xffffff); // soft white light
+			scene.add(light);
+		}
+
+		function loadGLTF() {
+			let balloonLoader = new THREE.GLTFLoader();
+
+			balloonLoader.load('./models/ish.glb', (gltf) => {
+				Mesh = gltf.scene;
+				Mesh.scale.set(7, 7, 7);
+				scene.add(Mesh);
+				Mesh.position.x = 0;
+				Mesh.position.y = 6;
+				Mesh.position.z = 15;
+			});
+		}
+
+		function animate() {
+			requestAnimationFrame(animate);
+			if (Mesh && Mesh.rotation) {
+				Mesh.rotation.y -= 0.005;
+			}
+			renderer.render(scene, camera);
+		}
+
+		init();
+		setLight();
+		loadGLTF();
+		animate();
+	</script>
+</body>
+
+</html>
