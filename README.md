@@ -9,6 +9,6 @@ This is my own 3D model loaded in a Web Page.
 
 View model [here](./Ish-Kapoor-3D-Model/scene.gltf)
 
+View **bust** with _floating hands_ [here](./Ish-Kapoor-3D-Model/scene.gltf)
 
-
-Note: Do not use these models for any commercial use without consent or credit.
+*Note*: Do not use these models for any commercial use without consent or credit.
