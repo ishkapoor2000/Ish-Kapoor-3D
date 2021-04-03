@@ -11,4 +11,6 @@ View model [here](./Ish-Kapoor-3D-Model/scene.gltf)
 
 View **bust** with _floating hands_ [here](./Ish-Kapoor-3D-Model/models/ish.glb)
 
-*Note*: Do not use these models for any commercial use without consent or credit.
+Minified version of Three Js Library can be downloaded from [here](./Ish-Kapoor-3D-Model/resources/three.min.js)
+
+**_Note_**: Do not use these models for any commercial use without consent or credit.
