@@ -7,7 +7,7 @@ This is my own 3D model loaded in a Web Page.
 
 ![Ish Kapoor](download.png)
 
-View model [here](./Ish-Kapoor-3D/Ish-Kapoor-3D-Model/scene.gltf)
+View model [here](./Ish-Kapoor-3D-Model/scene.gltf)
 
 
 
