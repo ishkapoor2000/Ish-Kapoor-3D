@@ -6,3 +6,9 @@ This is my own 3D model loaded in a Web Page.
 [Full Body](https://full-body-3d.ishkapoor.repl.co/)
 
 ![Ish Kapoor](download.png)
+
+View model [here](Ish-Kapoor-3D/Ish-Kapoor-3D-Model/scene.gltf)
+
+
+
+Note: Do not use these models for any commercial use without consent or credit.
